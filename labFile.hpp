@@ -8,7 +8,10 @@
 using namespace std;
 
 double fahrenheitToKelvin(double fahrenheit) {
-    return 0;
+    double kelvin;
+    kelvin = (fahrenheit - 32) * 5 / 9 + 273.15;
+
+    return kelvin;
 }
 
 bool isPrime(int n) {
