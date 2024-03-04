@@ -28,7 +28,14 @@ bool isPrime(int n) {
 }
 
 int sumOfPrimes(int limit) {
-    return 0;
+
+    int n, sum = 0;
+    for (n = 2; n <= limit; n++) 
+    {
+        if (isPrime(n) == true)
+            sum = sum + n;
+    }
+    return sum;
 }
 
 int reverseInteger(int num) {
